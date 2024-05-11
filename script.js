@@ -8,6 +8,7 @@ addBtn.addEventListener("click", function (e) {
     return alert("Please add Note Title and Details");
   }
 
+  // localStorage
   let notes = localStorage.getItem("notes");
   if (notes == null) {
     notesObj = [];
@@ -98,4 +99,5 @@ function editNote(index) {
   showNotes();
 }
 
+// calling the functions 
 showNotes();
